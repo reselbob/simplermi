@@ -4,9 +4,9 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-import com.reselbob.rmiinterface.RMIInterface;
+//import com.reselbob.rmiinterface.RMIInterface;
 
-public class ServerOperation extends UnicastRemoteObject implements RMIInterface{
+public class MyServer extends UnicastRemoteObject implements RMIInterface{
 
     private static final long serialVersionUID = 1L;
 

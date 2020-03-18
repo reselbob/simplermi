@@ -7,9 +7,9 @@ import java.rmi.RemoteException;
 
 
 //import com.reselbob.rmiinterface.RMIInterface;
-import RMIInterface;
+//import RMIInterface;
 
-public class ClientOperation {
+public class MyClient {
 
 	private static RMIInterface look_up;
 
