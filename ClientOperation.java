@@ -7,7 +7,7 @@ import java.rmi.RemoteException;
 
 import javax.swing.JOptionPane;
 
-import com.mkyong.rmiinterface.RMIInterface;
+import com.reselbob.rmiinterface.RMIInterface;
 
 public class ClientOperation {
 
