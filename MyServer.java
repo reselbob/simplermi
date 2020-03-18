@@ -2,7 +2,7 @@
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-
+import java.util.Date;
 
 
 public class MyServer extends UnicastRemoteObject implements RMIInterface{
@@ -17,17 +17,15 @@ public class MyServer extends UnicastRemoteObject implements RMIInterface{
 
     @Override
     public String echo(String message) throws RemoteException{
-
-        System.err.println("[" + message + "] is trying to make a connection!");
+        Date date = new Date(); 
+        System.err.println("[" + message + "] is trying to make a connection!" + "at " + date.toString());
         return "Echoing: " + message;
-
     }
 
     public static void main(String[] args){
-
         try {
 
-            Naming.rebind("//localhost:5000/MyServer", new MyServer());            
+            Naming.rebind("//localhost:5000/MyServer", new MyServer());           
             System.err.println("Server is up and running!");
 
         } catch (Exception e) {
@@ -36,7 +34,5 @@ public class MyServer extends UnicastRemoteObject implements RMIInterface{
             e.printStackTrace();
 
         }
-
     }
-
 }
