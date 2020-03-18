@@ -1,4 +1,4 @@
-package com.reselbob.rmiinterface;
+//package com.reselbob.rmiinterface;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

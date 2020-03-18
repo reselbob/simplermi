@@ -1,4 +1,4 @@
-package com.reselbob.rmiserver;
+//package com.reselbob.rmiserver;
 
 import java.rmi.Naming;
 import java.rmi.RemoteException;
@@ -28,7 +28,7 @@ public class ServerOperation extends UnicastRemoteObject implements RMIInterface
 
         try {
 
-            Naming.rebind("//localhost/MyServer", new ServerOperation());            
+            Naming.rebind("//localhost:5000/MyServer", new ServerOperation());            
             System.err.println("Server ready");
 
         } catch (Exception e) {

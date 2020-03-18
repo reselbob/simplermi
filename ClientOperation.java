@@ -1,13 +1,13 @@
-package com.reselbob.rmiclient;
+//package com.reselbob.rmiclient;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-import javax.swing.JOptionPane;
 
-import com.reselbob.rmiinterface.RMIInterface;
+//import com.reselbob.rmiinterface.RMIInterface;
+import RMIInterface;
 
 public class ClientOperation {
 
@@ -16,7 +16,7 @@ public class ClientOperation {
 	public static void main(String[] args) 
 		throws MalformedURLException, RemoteException, NotBoundException {
 		
-		look_up = (RMIInterface) Naming.lookup("//localhost/MyServer");
+		look_up = (RMIInterface) Naming.lookup("//localhost:5000/MyServer");
 
 		System.out.print("Enter a message:");
 		String input = System.console().readLine();
