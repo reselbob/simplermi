@@ -18,7 +18,7 @@ public class MyServer extends UnicastRemoteObject implements RMIInterface{
     @Override
     public String echo(String message) throws RemoteException{
 
-        System.err.println(message + " is trying to make a connection!");
+        System.err.println("[" + message + "] is trying to make a connection!");
         return "Echoing: " + message;
 
     }
