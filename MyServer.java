@@ -18,7 +18,7 @@ public class MyServer extends UnicastRemoteObject implements RMIInterface{
     @Override
     public String echo(String message) throws RemoteException{
         Date date = new Date();
-        System.err.println( "[" + message + "] is trying to echo at: " + date.toString() );
+        System.err.println( "Echoing [" + message + "] at: " + date.toString() );
         return "Echoing: " + message;
     }
 
