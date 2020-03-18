@@ -1,13 +1,10 @@
-//package com.reselbob.rmiclient;
+
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-
-//import com.reselbob.rmiinterface.RMIInterface;
-//import RMIInterface;
 
 public class MyClient {
 
@@ -18,12 +15,12 @@ public class MyClient {
 		
 		look_up = (RMIInterface) Naming.lookup("//localhost:5000/MyServer");
 
-		System.out.print("Enter a message:");
+		System.out.print("Enter a message: ");
 		String input = System.console().readLine();
 			
 		String response = look_up.echo(input);
 
-		System.out.print(response);
+		System.out.print(response + "\n");
 	}
 
 }
