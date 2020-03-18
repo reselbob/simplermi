@@ -10,7 +10,7 @@ public class MyServer extends UnicastRemoteObject implements RMIInterface{
 
     private static final long serialVersionUID = 1L;
 
-    protected ServerOperation() throws RemoteException {
+    protected MyServer() throws RemoteException {
 
         super();
 
